@@ -1,0 +1,99 @@
+@import "../../variables";
+.wrapper {
+  padding: 52px 0 18px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+
+  .textBox {
+    text-align: left;
+    color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    h1 {
+      margin: 0;
+      font-size: 80px;
+      font-weight: 700;
+      line-height: 88px;
+    }
+    p {
+      font-size: 23px;
+      line-height: 31.92px;
+      font-weight: 400;
+      opacity: 0.7;
+      max-width: 450px;
+    }
+    .action {
+      margin-top: 16px;
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      button {
+        color: $primary-color;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 11px 46px;
+        background-color: $secondary-color;
+        border: 1px solid $secondary-color;
+        border-radius: 16px;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: all 0.3s ease;
+        &:hover {
+          background-color: transparent;
+          border: 2px solid $secondary-color;
+          color: $secondary-color;
+        }
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+
+    .textBox {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 560px) {
+  .wrapper {
+    gap: 30px !important;
+
+    .textBox {
+      gap: 20px !important;
+      h1 {
+        font-size: 60px !important;
+      }
+      p {
+        font-size: 18px !important;
+      }
+
+      .action {
+        gap: 10px;
+        button {
+          padding: 10px 25px;
+        }
+        p {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+}
