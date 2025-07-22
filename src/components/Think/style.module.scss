@@ -1,0 +1,95 @@
+@import "../../variables";
+.wrapper {
+  display: flex;
+  gap: 66px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 160px 0;
+
+  .textBox {
+    text-align: left;
+    color: $primary-color;
+    h2 {
+      font-size: 32px;
+      font-weight: 700;
+    }
+    p {
+      font-size: 24px;
+      line-height: 31.92px;
+      font-weight: 400;
+      opacity: 0.7;
+      padding-right: 20px;
+    }
+
+    .btns {
+      padding-top: 16px;
+      margin-top: 139px;
+      display: flex;
+      gap: 16px;
+      .btnPrebuilds {
+        font-size: 14px;
+        font-weight: 700;
+        background-color: $secondary-color;
+        padding: 8px 18px;
+        border-radius: 10.5px;
+        border: 2px solid $secondary-color;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          background-color: transparent;
+          color: $secondary-color;
+        }
+      }
+      .btnDocumentation {
+        font-size: 14px;
+        font-weight: 700;
+        padding: 8px 24px;
+        background-color: #ffb0ae;
+        border-radius: 10.5px;
+        border: 2px solid #ffb0ae;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          background-color: transparent;
+          color: #ffb0ae;
+        }
+      }
+    }
+  }
+  .image {
+    img {
+      border-radius: 20px;
+    }
+  }
+}
+
+@media (max-width: 1172px) {
+  .btns {
+    margin-top: auto !important;
+  }
+}
+
+@media (max-width: 1040px) {
+  .wrapper {
+    flex-direction: column-reverse;
+    justify-content: center;
+    .textBox {
+      text-align: center;
+      .btns {
+        justify-content: center;
+      }
+    }
+
+    .image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    padding: 80px 0;
+  }
+}
