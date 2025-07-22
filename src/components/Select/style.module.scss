@@ -1,0 +1,24 @@
+@import "../../variables";
+.textBox {
+  padding: 160px 0;
+  h1 {
+    text-align: center;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 63.72px;
+    color: $primary-color;
+    span {
+      font-weight: 400;
+      color: #999795;
+      text-decoration: line-through;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .textBox {
+    h1 {
+      font-size: 40px !important;
+    }
+  }
+}
