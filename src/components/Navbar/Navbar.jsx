@@ -33,6 +33,17 @@ export const Navbar = () => {
           <button onClick={toggleNav} className={s.mobile}>
             <AiOutlineMenu size={25} />
           </button>
+          {isNavActive && (
+            <div className={s.menu}>
+              <div className={s.menuLinks}>
+                {navLinks.map((link) => (
+                  <Link key={link.id} to={link.href} className={s.menuLink}>
+                    {link.title}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </nav>

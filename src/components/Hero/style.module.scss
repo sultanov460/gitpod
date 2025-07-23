@@ -1,5 +1,8 @@
 @import "../../variables";
 .wrapper {
+  opacity: 0;
+  animation: hero 1s ease-in forwards;
+  animation-delay: 1s;
   padding: 52px 0 18px;
   display: flex;
   gap: 50px;
@@ -52,6 +55,12 @@
         font-weight: 400;
       }
     }
+  }
+}
+
+@keyframes hero {
+  to {
+    opacity: 1;
   }
 }
 
