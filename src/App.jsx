@@ -3,6 +3,7 @@ import { Hero } from "./components/Hero/Hero";
 import { Select } from "./components/Select/Select";
 import { Think } from "./components/Think/Think";
 import { Remote } from "./components/Remote/Remote";
+import { Used } from "./components/Used/Used";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Select />
       <Think />
       <Remote />
+      <Used />
     </div>
   );
 }
