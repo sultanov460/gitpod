@@ -20,7 +20,7 @@ export const Think = () => {
             </div>
           </div>
           <div className={s.image}>
-            <img src="think-section.png" alt="think-section" />
+            <img src="/think-section.png" alt="think-section" />
           </div>
         </div>
       </div>

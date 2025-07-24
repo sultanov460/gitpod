@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import s from "./style.module.scss";
 import { AiOutlineMenu } from "react-icons/ai";
 import { useState } from "react";
+import { GrClose } from "react-icons/gr";
 
 export const Navbar = () => {
   const [isNavActive, setIsNavActive] = useState(false);
@@ -9,6 +10,7 @@ export const Navbar = () => {
   function toggleNav() {
     setIsNavActive(!isNavActive);
   }
+
   const navLinks = [
     { id: 1, title: "Home", href: "/" },
     { id: 2, title: "Pricing", href: "/pricing" },
@@ -31,7 +33,7 @@ export const Navbar = () => {
           </div>
           <button className={s.btn}>Contact</button>
           <button onClick={toggleNav} className={s.mobile}>
-            <AiOutlineMenu size={25} />
+            {isNavActive ? <GrClose size={25} /> : <AiOutlineMenu size={25} />}
           </button>
           {isNavActive && (
             <div className={s.menu}>

@@ -15,25 +15,13 @@ footer {
       gap: 170px;
       border-bottom: 1px solid #ece7e5;
 
-      .row {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        .title {
-          font-weight: 700;
-        }
-        a {
-          color: $primary-color;
-          text-decoration: none;
-          font-size: 13px;
-          font-weight: 400;
-        }
-      }
+
     }
     .copyright {
       display: flex;
       padding-top: 33px;
-      gap: 600px; //????
+      justify-content: space-between;
+      width: 100%;
     }
   }
 }

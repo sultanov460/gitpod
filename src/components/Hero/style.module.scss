@@ -20,6 +20,7 @@
       font-size: 80px;
       font-weight: 700;
       line-height: 88px;
+      max-width: 520px;
     }
     p {
       font-size: 23px;
@@ -96,9 +97,11 @@
       }
 
       .action {
+        flex-direction: column;
         gap: 10px;
         button {
           padding: 10px 25px;
+          width: 100%;
         }
       }
     }
